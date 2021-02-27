@@ -26,6 +26,7 @@ namespace Laboratorio.Pages
                 this.Equipos = new List<Equipo>();
             }
             this.GridView1.DataSource = Equipos;
+            this.GridView1.DataBind();
         }
         protected void btnRegEquipo_Click(object sender, EventArgs e)
         {
@@ -51,6 +52,7 @@ namespace Laboratorio.Pages
             Debug.Print("HelloWorld");
             int index = Convert.ToInt32(e.CommandArgument);
             Singleton.Instance.EquipoSeleccionado = Equipos[index];
+            Response.Redirect("AddPlayers.aspx");
         }
     }
 }

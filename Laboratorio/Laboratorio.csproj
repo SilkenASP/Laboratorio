@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\edit.svg" />
+    <Content Include="Pages\AddPlayers.aspx" />
     <Content Include="Pages\RegEquipo.aspx" />
     <Content Include="Pages\RegUniversidad.aspx" />
     <Content Include="Web.config" />
@@ -74,6 +76,13 @@
   <ItemGroup>
     <Compile Include="Model\Equipo.cs" />
     <Compile Include="Model\Jugador.cs" />
+    <Compile Include="Pages\AddPlayers.aspx.cs">
+      <DependentUpon>AddPlayers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AddPlayers.aspx.designer.cs">
+      <DependentUpon>AddPlayers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\RegEquipo.aspx.cs">
       <DependentUpon>RegEquipo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -108,9 +117,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

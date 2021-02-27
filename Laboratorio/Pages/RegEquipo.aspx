@@ -6,6 +6,7 @@
     <div class="container">
         <br />
         <div class="row">
+            <asp:Label ID="Label1" runat="server" Text="Nomre del equipo" CssClass="col-2"></asp:Label>
             <asp:TextBox ID="txtNombreEquipo" runat="server" CssClass="col"></asp:TextBox>
         </div>
         <br />
